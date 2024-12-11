@@ -11,7 +11,7 @@
 4 6 2
 5 6 6
 */
-/*#include<iostream>
+#include<iostream>
 #include<cstdio>
 #include<cmath>
 #include<windows.h>
@@ -150,4 +150,4 @@ int main()
     _getch();
     closegraph();
     return 0;
-}*/
+}
