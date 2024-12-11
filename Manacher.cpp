@@ -1,7 +1,7 @@
 /*
 accvcvccx
 */
-/*#include <iostream>
+#include <iostream>
 #include <cstdio>
 #include <cstring>
 #include<cmath>
@@ -61,7 +61,7 @@ int main()
         line(x[c - r[c]], y + 40, x[c + r[c]], y + 40);
         if (i + r[i] > c + r[c])
         {
-            c = i;   //注意更新C的位置
+            c = i;   //脳垄脪芒赂眉脨脗C碌脛脦禄脰脙
         }
         ans = max(ans, r[i]);
         _getch();
@@ -72,4 +72,4 @@ int main()
     _getch();
     closegraph();
     return 0;
-}*/
+}
