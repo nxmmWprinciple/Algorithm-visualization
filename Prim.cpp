@@ -11,7 +11,7 @@
 4 6 2
 5 6 6
 */
-/*#include<iostream>
+#include<iostream>
 #include<cstdio>
 #include<cmath>
 #include<windows.h>
@@ -71,12 +71,12 @@ int main()
         }
     }
     _getch();
-    printf("³õÊ¼Î´Á¬½ÓµÄdis:\n");
+    printf("åˆå§‹æœªè¿æ¥çš„dis:\n");
     for (int r = 1; r <= n ; r++)
     {
         if (book[r] != 1)
         {
-            printf("µã%d:%d     ", r, dis[r]);
+            printf("ç‚¹%d:%d     ", r, dis[r]);
         }
     }
     printf("\n");
@@ -126,12 +126,12 @@ int main()
                 dis[k] = e[j][k];
             }
         }
-        printf("¸üĞÂÎ´Á¬½ÓµÄdis:\n");
+        printf("æ›´æ–°æœªè¿æ¥çš„dis:\n");
         for (int r = 1; r <= n; r++)
         {
             if (book[r] != 1)
             {
-                printf("µã%d:%d     ", r,dis[r]);
+                printf("ç‚¹%d:%d     ", r,dis[r]);
             }
         }
         printf("\n");
@@ -141,4 +141,4 @@ int main()
     _getch();
     closegraph();
     return 0;
-}*/
+}
