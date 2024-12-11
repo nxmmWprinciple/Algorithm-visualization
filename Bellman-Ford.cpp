@@ -8,7 +8,7 @@
 4 3 3
 4 5 1
 */
-/*#include<iostream>
+#include<iostream>
 #include<cstdio>
 #include<cmath>
 #include<windows.h>
@@ -39,18 +39,18 @@ void BellmanFord()
 		scanf("%d %d %d", &u[i], &v[i], &w[i]);
 		char str = w[i] + '0';
 		line(px[u[i] - 1], py[u[i] - 1], px[v[i] - 1], py[v[i] - 1]);
-		// 计算箭头头部两条边的方向向量
+		// 璁＄畻绠ご澶撮儴涓ゆ潯杈圭殑鏂瑰悜鍚戦噺
 		double dx = (px[u[i] - 1] + px[v[i] - 1]) / 2 - px[u[i] - 1];
 		double dy = (py[u[i] - 1] + py[v[i] - 1]) / 2 - py[u[i] - 1];
 		double length = sqrt(dx * dx + dy * dy);
 		dx /= length;
 		dy /= length;
-		// 计算箭头头部两条边的终点坐标
+		// 璁＄畻绠ご澶撮儴涓ゆ潯杈圭殑缁堢偣鍧愭爣
 		int arrowTipX1 = (px[u[i] - 1] + px[v[i] - 1]) / 2 + (int)(10 * (dy - dx));
 		int arrowTipY1 = (py[u[i] - 1] + py[v[i] - 1]) / 2 - (int)(10 * (dx + dy));
 		int arrowTipX2 = (px[u[i] - 1] + px[v[i] - 1]) / 2 - (int)(10 * (dy + dx));
 		int arrowTipY2 = (py[u[i] - 1] + py[v[i] - 1]) / 2 - (int)(10 * (-dx + dy));
-		// 绘制箭头头部
+		// 缁樺埗绠ご澶撮儴
 		line((px[u[i] - 1] + px[v[i] - 1]) / 2, (py[u[i] - 1] + py[v[i] - 1]) / 2, arrowTipX1, arrowTipY1);
 		line((px[u[i] - 1] + px[v[i] - 1]) / 2, (py[u[i] - 1] + py[v[i] - 1]) / 2, arrowTipX2, arrowTipY2);
 		if(ok==1)
@@ -108,7 +108,7 @@ void BellmanFord()
 		if (dis[v[i]] > dis[u[i]] + w[i])flag = 1;
 	if (flag == 1)
 	{
-		printf("此图含有负权回路");
+		printf("姝ゅ浘鍚湁璐熸潈鍥炶矾");
 	}
 	else
 	{
@@ -123,4 +123,4 @@ int main()
 {
 	BellmanFord();
 	return 0;
-}*/
+}
