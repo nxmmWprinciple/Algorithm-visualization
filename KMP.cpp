@@ -4,7 +4,7 @@ ABABC
 9
 ABABABCAA
 */
-/*#include<iostream>
+#include<iostream>
 #include<string>
 #include<cstdio>
 #include<cmath>
@@ -107,4 +107,4 @@ int main()
 	_getch();
 	closegraph();
 	return 0;
-}*/
+}
