@@ -1,5 +1,5 @@
 //夹带私货
-//w我爱你lyx!!!
+//我爱你lyx!!!
 #include<stdio.h>
 int main()
 {
