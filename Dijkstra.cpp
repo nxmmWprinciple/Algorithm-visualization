@@ -11,7 +11,7 @@
 4 6 4
 5 6 1
 */
-/*#include<iostream>
+#include<iostream>
 #include<cstdio>
 #include<cmath>
 #include<windows.h>
@@ -45,18 +45,18 @@ int main()
 		e[t1][t2] = t3;
 		char str = t3 + '0';
 		line(px[t1-1], py[t1-1], px[t2 -1], py[t2 -1]);
-		// 计算箭头头部两条边的方向向量
+		// 璁＄畻绠ご澶撮儴涓ゆ潯杈圭殑鏂瑰悜鍚戦噺
 		double dx = (px[t1 - 1] + px[t2 - 1]) / 2 - px[t1 - 1];
 		double dy = (py[t1 - 1] + py[t2 - 1]) / 2 - py[t1 - 1];
 		double length = sqrt(dx * dx + dy * dy);
 		dx /= length;
 		dy /= length;
-		// 计算箭头头部两条边的终点坐标
+		// 璁＄畻绠ご澶撮儴涓ゆ潯杈圭殑缁堢偣鍧愭爣
 		int arrowTipX1 = (px[t1 - 1] + px[t2 - 1]) / 2 + (int)(10 * (dy - dx));
 		int arrowTipY1 = (py[t1 - 1] + py[t2 - 1]) / 2 - (int)(10 * (dx + dy));
 		int arrowTipX2 = (px[t1 - 1] + px[t2 - 1]) / 2 - (int)(10 * (dy + dx));
 		int arrowTipY2 = (py[t1 - 1] + py[t2 - 1]) / 2 - (int)(10 * (-dx + dy));
-		// 绘制箭头头部
+		// 缁樺埗绠ご澶撮儴
 		line((px[t1 - 1] + px[t2 - 1]) / 2, (py[t1 - 1] + py[t2 - 1]) / 2, arrowTipX1, arrowTipY1);
 		line((px[t1 - 1] + px[t2 - 1]) / 2, (py[t1 - 1] + py[t2 - 1]) / 2, arrowTipX2, arrowTipY2);
 		settextcolor(WHITE);
@@ -133,4 +133,4 @@ int main()
 	_getch();
 	closegraph();
 	return 0;
-}*/
+}
